@@ -109,12 +109,26 @@ main {
             width: 100%;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(255, 230, 0, 0.793);
+            border: 1px solid yellow;
             margin: 10px;
         }
         .imagehistoria {
             width: 100%;
             border-radius: 10px;
             margin: 10px;
+            border: solid 2px white; 
+        }
+    }
+    #Galeria {
+        .col {
+            text-align: center;
+            img {
+                width: 600px;
+                margin: 10px;
+                border-radius: 15px;
+                border: solid 1px red;
+                box-shadow: 0 0 15px rgba(255, 55, 0, 0.836);
+            }
         }
     }
 }
