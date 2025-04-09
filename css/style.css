@@ -128,7 +128,21 @@ main {
                 border-radius: 15px;
                 border: solid 1px red;
                 box-shadow: 0 0 15px rgba(255, 55, 0, 0.836);
+                border-block-start-color: yellow;
             }
+        }
+    }
+    .Jogar {
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+        font-style: oblique;
+        .btn {
+            background-color: rgb(206, 175, 2);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 20px;   
         }
     }
 }
