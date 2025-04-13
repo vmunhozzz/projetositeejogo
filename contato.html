@@ -36,11 +36,56 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" class="form" placeholder="Digite seu email" required>
 
+            <label for="telefone">Telefone:</label>
+            <input type="telefone" id="telefone" name="telefone" class="form" placeholder="Telefone" required>
+
             <label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" name="mensagem" class="form" placeholder="Digite sua mensagem" required></textarea>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" id="botao">Enviar</button>
         </form>
+
+    <script>
+        // Captura o botão pelo ID e adiciona um evento de clique
+        document.getElementById('botao').onclick = function() {
+            // Obtem o valor do campo "none"
+            var nome = document.getElementById('nome').value;
+            // Obtem o valor do campo "email"
+            var email = document.getElementById("email").value;
+            // Obtem o valor do campo "telefone"
+            var telefone = document.getElementById("telefone").value;
+
+            // Verifica se todos os campos estao vazios ao mesmo tempo
+            if (nome == "" && email == "" && telefone == "") {
+                alert("Por favor, preencha todos os campos."); //Exibe um alerta para informar que todos os campos estao vazios
+            } else {
+                //Verifica individualmente se o campo "nome" esta vazio
+                if(nome == "") {
+                    alert("Informe o nome"); //Exibe uma mensagem caso o nome esteja vazio
+                }
+
+                // Verifica individualmente se o campo email esta vazio
+                if(email == ""){
+                    alert("Informe o email"); //Exibe um alerta caso o campo "email" esteja vazio
+                }
+
+                //Verifica individualmente se o campo telefone estiver vazio
+                if(telefone == ""){
+                    alert("Informe o telefone"); //Exibe um alerta caso o campo telefone esteja vazio
+                }
+                //Verifica individualmente se o campo mensagem estiver vazio
+                if(mensagem == ""){
+                    alert("Informe sua mensagem");
+                }
+        }
+
+        //Confirma que todos os campos foram preenchidos
+        if(nome != "" && email != "" && telefone != "" && mensagem != ""){
+            alert("Formulario enviado com sucesso!"); //Exibe um alerta de sucesso informando que o formulario foi enviado
+        }
+    };
+    </script>        
+
     </div>
         
     </main>
