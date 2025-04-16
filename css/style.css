@@ -238,7 +238,8 @@ iframe {
     display: block;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 680px) {
     * {
         margin: 0;
     }
@@ -274,6 +275,7 @@ iframe {
         float: right;
         margin-top: 10px;
         border-radius: 5px;
+        background-color: #0f1232;
     }
     #Sobre {
         .image2 {
@@ -284,7 +286,7 @@ iframe {
         margin: 0;
         padding: 10;
     }
-    #Galeria {
+    .Galeria {
         img {
             width: 100%;
         }
