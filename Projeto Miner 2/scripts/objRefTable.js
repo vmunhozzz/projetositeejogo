@@ -13,8 +13,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Bullet,
 		C3.Behaviors.wrap,
 		C3.Behaviors.Persist,
+		C3.Plugins.Audio,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.System.Cnds.CompareVar,
@@ -25,6 +28,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.Sprite.Acts.SetPos,
+		C3.ScriptsInEvents.FolhaDeEventosJogo_Event8_Act4,
+		C3.ScriptsInEvents.FolhaDeEventosJogo_Event9_Act3,
 		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.System.Acts.ResetGlobals
 	];
@@ -74,6 +79,7 @@ self.C3_JsPropNameTable = [
 	{portal2: 0},
 	{playGameOver: 0},
 	{exitgameover: 0},
+	{Áudio: 0},
 	{Vidas: 0}
 ];
 
@@ -113,5 +119,6 @@ self.InstanceType = {
 	Sprite6: class extends self.ISpriteInstance {},
 	portal2: class extends self.ISpriteInstance {},
 	playGameOver: class extends self.ISpriteInstance {},
-	exitgameover: class extends self.ISpriteInstance {}
+	exitgameover: class extends self.ISpriteInstance {},
+	Áudio: class extends self.IInstance {}
 }

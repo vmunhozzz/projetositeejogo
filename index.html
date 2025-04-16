@@ -10,6 +10,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="short cut icon" href="images/GOLD MINER-100x100.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- CSS media query em um elemento de link -->
 <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
 </head>
@@ -21,8 +24,8 @@
             <img src="images/gold miner texto logo245x50.png" alt="GOLD MINER GAME">
         </a>
 
-        <a href="#" class="menu">
-            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        <a href="javascript:mostrarmenu()" title="Menu" class="menulogo">
+            <i class="fa-solid fa-bars"></i>
         </a>
 
         <nav>
@@ -50,14 +53,14 @@
                     </p>
             </div>
             <div class="col">
-                <img src="images/Background site gold miner.png" alt="Banner do Jogo" data-aos="flip-left">
+                <img src="images/Background site gold miner.png" alt="Banner do Jogo" class="imagebanner">
             </div>    
         </section>
 
         <section id="Sobre">
             <h2>Sobre o GOLD MINER</h2>
             <img src="images/sobreojogobannersite-1150x400.png" alt="Sobre o jogo" 
-            class="image2" data-aos="fade-up">
+            class="image2">
             <p>O jogo GOLD MINER é um jogo cheio de desafios para serem vencidos</p>
             <p>Tem o objetivo de concluir sua jornada em uma caverna misteriosa, com aventuras emocionantes!</p>
             <p>Conclua seus objetivos ao longo do percurso para sair vitorioso!</p>
@@ -103,6 +106,14 @@
             Desenvolvido por Vitor - Todos os direitos reservados
         </p>
     </footer>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        function mostrarmenu() {
+           document.querySelector("header nav").classList.toggle("mostrar");
+        }
+    </script>
 
     <script>
         AOS.init();

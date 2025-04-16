@@ -231,12 +231,17 @@ iframe {
    padding: 50px;
 }
 
-.menu {
-    display: none
+.menulogo {
+    display: none;
+}
+.mostrar {
+    display: block;
 }
 
-
 @media (max-width: 600px) {
+    * {
+        margin: 0;
+    }
     .banner {
         width: 400px;
     }
@@ -261,8 +266,28 @@ iframe {
     header img {
         width: 200px;
     }
-    .menu {
+    .menulogo {
         display: block;
+        border: 1px solid #FFF;
+        padding: 10px 25px;
+        color: #FFF;
+        float: right;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    #Sobre {
+        .image2 {
+            width: 100%;
+        }
+    }
+    .banner {
+        margin: 0;
+        padding: 10;
+    }
+    #Galeria {
+        img {
+            width: 100%;
+        }
     }
 }
   
